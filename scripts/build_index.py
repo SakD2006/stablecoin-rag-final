@@ -155,6 +155,10 @@ def test_retrieval(vectorstore):
 
 def main():
 
+    if Path("vector_db").exists():
+        print("Vector DB already exists. Skipping build.")
+        exit()
+
     print("\n🚀 Building Stablecoin Research Index\n")
 
     documents = load_documents()
