@@ -1,63 +1,71 @@
 # =====================================================
 # FASTAPI BACKEND
 # =====================================================
-fastapi==0.115.6
-uvicorn[standard]==0.30.6
-python-dotenv==1.0.1
-sse-starlette==2.1.3
+fastapi==0.129.0
+uvicorn[standard]==0.40.0
+starlette==0.52.1
+python-dotenv==1.2.1
 
 # =====================================================
 # DATABASE (SUPABASE POSTGRES)
 # =====================================================
-psycopg2-binary==2.9.9
+psycopg2-binary==2.9.11
 
 # =====================================================
-# LANGCHAIN CORE (V1 - NON DEPRECATED)
+# LANGCHAIN ECOSYSTEM (V1)
 # =====================================================
 langchain==1.2.10
-langchain-core==1.2.23
-langgraph==0.2.60
+langchain-core==1.2.12
+langchain-community==0.4.1
+langchain-groq==1.1.2
+langchain-huggingface==1.2.0
+langchain-chroma==1.1.0
+langchain-text-splitters==1.1.0
 
-# Integrations
-langchain-groq==0.1.9
-langchain-chroma==0.1.4
-langchain-huggingface==0.0.3
-langchain-community==0.2.12
-langchain-text-splitters==0.2.4
+# =====================================================
+# AGENT RUNTIME
+# =====================================================
+langgraph==1.0.8
+langgraph-prebuilt==1.0.7
 
 # =====================================================
 # VECTOR DATABASE
 # =====================================================
-chromadb==0.5.5
+chromadb==1.5.0
 
 # =====================================================
-# EMBEDDINGS (CPU SAFE)
+# EMBEDDINGS (HF LOCAL)
 # =====================================================
-sentence-transformers==3.0.1
-transformers==4.44.2
-huggingface-hub==0.24.6
-
-# CPU torch (Render compatible)
-torch==2.3.1
-
-# =====================================================
-# DOCUMENT LOADERS
-# =====================================================
-pypdf==4.3.1
+sentence-transformers==5.2.2
+transformers==4.57.6
+huggingface-hub==0.36.2
+torch==2.10.0
+safetensors==0.7.0
 
 # =====================================================
-# DATA UTILITIES
+# DOCUMENT LOADING
 # =====================================================
-numpy==1.26.4
-pandas==2.2.2
+pypdf==6.7.0
 
 # =====================================================
 # NETWORKING
 # =====================================================
-httpx==0.27.2
-requests==2.32.3
+httpx==0.28.1
+requests==2.32.5
+
+# =====================================================
+# DATA UTILITIES
+# =====================================================
+numpy==2.4.2
+pandas==2.2.2
 
 # =====================================================
 # VALIDATION
 # =====================================================
-pydantic==2.9.2
+pydantic==2.12.5
+pydantic-settings==2.12.0
+
+# =====================================================
+# GROQ CLIENT
+# =====================================================
+groq==0.37.1
